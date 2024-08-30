@@ -143,7 +143,7 @@ export default function App() {
     if (solana) {
       try {
         await solana.disconnect();
-        setReceiverPublicKey(undefined);
+        setReceiverPublicKey(receiverPublicKey);
         console.log("Wallet disconnected");
       } catch (err) {
         console.error(err);
